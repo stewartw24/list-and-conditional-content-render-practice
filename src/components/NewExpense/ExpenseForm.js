@@ -44,7 +44,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount, //adding the '+' symbol to fix a small bug - multiple values will be added a strings without it.
       date: new Date(enteredDate),
     };
 
